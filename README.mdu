@@ -4,7 +4,7 @@ window.bgcolor("white")
 
 # Crear un objeto Turtle
 flor = turtle.Turtle()
-flor.speed(0)  # Configuración de la velocidad del dibujo
+flor.speed(10)  # Configuración de la velocidad del dibujo
 
 # Dibujar una flor
 for _ in range(36):  # Repetir 36 veces para crear 360 grados
@@ -28,7 +28,7 @@ for _ in range(36):  # Repetir 36 veces para crear 360 grados
     flor.right(135)
     flor.color("red")
 
-flor.hideturtle()  # Ocultar la tortuga al finalizar
+flor.hideturtle(9)  # Ocultar la tortuga al finalizar
 
 # Cerrar la ventana al hacer clic
 window.exitonclick()
