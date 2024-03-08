@@ -1,0 +1,34 @@
+# Configuración inicial de la ventana
+window = turtle.Screen()
+window.bgcolor("white")
+
+# Crear un objeto Turtle
+flor = turtle.Turtle()
+flor.speed(0)  # Configuración de la velocidad del dibujo
+
+# Dibujar una flor
+for _ in range(36):  # Repetir 36 veces para crear 360 grados
+    flor.color("red")
+    flor.forward(100)
+    flor.right(45)
+    flor.color("orange")
+    flor.forward(100)
+    flor.right(135)
+    flor.color("yellow")
+    flor.forward(100)
+    flor.right(45)
+    flor.color("green")
+    flor.forward(100)
+    flor.right(135)
+    flor.color("blue")
+    flor.forward(100)
+    flor.right(45)
+    flor.color("purple")
+    flor.forward(100)
+    flor.right(135)
+    flor.color("red")
+
+flor.hideturtle()  # Ocultar la tortuga al finalizar
+
+# Cerrar la ventana al hacer clic
+window.exitonclick()
